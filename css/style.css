@@ -1,0 +1,71 @@
+@font-face {
+   font-family: dragonfire;
+   src: url(./fonts/DragonFire.ttf);
+}
+body {
+   background-image: url('../img/tile-sky2.jpg');
+   font-family: 'dragonfire', Times, serif;
+}
+
+main {
+   background-color: gray;
+   margin-left: 5%;
+   margin-right: 5%;
+   width: auto;
+}
+.hero{
+   width: auto;
+   position: relative;
+}
+.hero img {
+   width: 100%;
+}
+.name {
+   background-color: rgb(255, 255, 255, 0.5);
+   font-size: 50px;
+   border-radius: 10px;
+   border-top-right-radius: 20px;
+   border-bottom-left-radius: 20px;
+   margin-right: 20px;
+   margin-top: 40px;
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+.text {
+   font-size:25px;
+   padding: 8%;
+   text-align: justify;
+   text-indent: 50px;
+   line-height: 1;
+   color: white;
+}
+h1{
+   text-align: center;
+   color: black;
+}
+footer{
+   text-align: center;
+   margin: 30px;
+   padding-bottom: 15px;
+}
+
+.photos {
+   display: flex; 
+   justify-content: space-around;
+   background-color: aliceblue;
+   object-fit: contain;
+   height: 300px;
+   width: auto;
+}
+
+@media screen and (max-width: 800px) {
+   .photos {
+      display: block;
+      height: auto;
+   }
+   .name {
+      font-size: 25px;
+   }
+}
